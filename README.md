@@ -16,8 +16,6 @@ Un greffon léger pour **Anki** qui affiche automatiquement un GIF d'encourageme
 
 ## Installation pas à pas
 
-Puisque ce greffon est fourni sous la forme d'un script Python direct (`__init__.py`), voici comment l'installer manuellement dans votre logiciel Anki :
-
 ### Étape 1 : Localiser le dossier des add-ons d'Anki
 
 1. Ouvrez l'application **Anki** sur votre ordinateur.
@@ -51,3 +49,9 @@ Puisque ce greffon est fourni sous la forme d'un script Python direct (`__init__
 1. Fermez complètement l'application **Anki**.
 2. Relancez **Anki**.
 3. Lancez vos révisions : un GIF félicitant votre effort apparaîtra au centre de l'écran à chaque palier de 10 cartes ! 🎉
+
+### Étape 5 (optionnelle) : Personnaliser le greffon
+
+1. Ouvrez le fichier `__init__.py` avec Bloc-notes (ou VS code ou Zed)
+2. Modifiez le nombre situés à la sixième ligne, juste après `INTERVALLE_GIF = ` par le nombre que vous voulez. Vous pouvez réduire ce nombre à 5 par exemple si vous trouvez que vous ne voyez pas de GIF assez souvent, ou bien l'augmenter à 20 si vous préférez voir des GIF moins souvent.
+3. Rajoutez des GIFs dans la liste `GIF_URLS` en suivant bien le même format que celui indiqué !
